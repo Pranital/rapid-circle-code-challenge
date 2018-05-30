@@ -1,0 +1,4 @@
+node:
+    build: docker/grunt
+    volumes:
+            - .:/workspace
