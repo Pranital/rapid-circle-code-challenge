@@ -35,7 +35,7 @@ a {
 body.ms-Grid {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: 'Open Sans', sans-serif;
   padding: 0 10.1%;
 }
 @media (max-width: 991px) {
@@ -96,6 +96,7 @@ header.header nav.middleNav {
 }
 header.header nav.middleNav .search-wrapr {
   position: relative;
+  z-index: 2;
   display: table;
   border-collapse: separate;
 }
@@ -133,19 +134,11 @@ header.header nav.middleNav .search-wrapr input.search {
   padding: 12px;
   border: 0;
   box-shadow: inset 0 0px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  transition: all ease 1s;
   min-height: 49px;
 }
 header.header nav.middleNav .search-wrapr input.search:focus {
-  outline-color: #b02ed3;
-  box-shadow: inset 0 0px 3px #f0d7f6;
-}
-header.header nav.middleNav .search-wrapr input.search.animateSearch {
-  transform: rotateY(0deg);
+  outline-color: #f0d7f6;
+  box-shadow: 0 0px 7px #b02ed3;
 }
 @media (max-width: 480px) {
   header.header nav.middleNav .search-wrapr .navbar-collapse .navbar-right.floatRight {
@@ -330,6 +323,7 @@ section.app_banner article.appBanner span {
 }
 section.mainContentWrapr {
   display: grid;
+  margin-top: 20px;
 }
 section.mainContentWrapr article.container-heading {
   font-size: 2vw;
@@ -355,7 +349,7 @@ section.mainContentWrapr div.mainContent article.leftContainer div.sidenav {
 }
 section.mainContentWrapr div.mainContent article.leftContainer div.sidenav a {
   display: block;
-  padding: 5px 16px;
+  padding: 10px 16px;
   color: #333333;
   background: white;
   text-decoration: none;
@@ -485,14 +479,14 @@ section.mainContentWrapr div.mainContent article.leftContainer.rightNavContainer
 section.mainContentWrapr div.mainContent article.rightContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr {
-  margin: 8px 9px;
+  margin: 0 9px 40px;
   line-height: 75px;
   display: flex;
-  flex-basis: 48%;
+  flex-basis: 45%;
 }
 @media (max-width: 991px) {
   section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr {
@@ -612,6 +606,7 @@ section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .p
 }
 section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .person-content .person-info {
   font-size: 16px;
+  margin-bottom: 20px;
   line-height: 20px;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .person-content .person-info.marBtm14 {
@@ -662,7 +657,7 @@ section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .p
 }
 section.mainContentWrapr div.mainContent.app-mainContent {
   grid-template-columns: 20% auto 20%;
-  grid-column-gap: 20px;
+  grid-column-gap: 50px;
 }
 @media (max-width: 991px) {
   section.mainContentWrapr div.mainContent.app-mainContent {
@@ -684,10 +679,11 @@ section.mainContentWrapr div.mainContent.app-mainContent .rightContainer div {
   width: 100%;
   padding-bottom: 20px;
   padding-left: 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 section.mainContentWrapr div.mainContent.app-mainContent .rightContainer .heading {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: bold;
 }
 section.mainContentWrapr div.mainContent.app-mainContent .rightContainer .footer {
   display: flex;
