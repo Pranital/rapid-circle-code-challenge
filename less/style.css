@@ -350,6 +350,11 @@ section.mainContentWrapr article.container-heading {
   font-weight: bold;
   color: #333333;
 }
+@media (max-width: 991px) {
+  section.mainContentWrapr article.container-heading {
+    font-size: 4vw;
+  }
+}
 section.mainContentWrapr div.mainContent {
   display: grid;
   grid-template-columns: 20% auto;
@@ -767,7 +772,6 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   top: 0;
   right: 0;
   height: 125%;
-  z-index: 1;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents:before {
   content: "";
@@ -805,7 +809,6 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   border-radius: 5px;
   display: inline-block;
   font-size: 11px;
-  z-index: -1;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents .folding_corner-button strong {
   font-size: 13px;

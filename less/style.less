@@ -302,6 +302,9 @@ section.mainContentWrapr{
     padding: 16px;
     font-weight: bold;
     color: @black;
+    @media(max-width : @md){
+      font-size: 4vw;
+    }
   }
   div.mainContent{
     display: grid;
@@ -719,7 +722,6 @@ section.mainContentWrapr{
         	top: 0;
         	right: 0;
         	height: 125%;
-          z-index: 1;
           &:before {
           	content: "";
           	position: absolute;
@@ -756,7 +758,6 @@ section.mainContentWrapr{
           	border-radius: 5px;
           	display: inline-block;
           	font-size: 11px;
-            z-index: -1;
             strong{
               font-size: 13px;
             	font-weight: bold;
