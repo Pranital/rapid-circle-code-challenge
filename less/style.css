@@ -269,7 +269,7 @@ section.banner {
   }
 }
 section.banner article.leftBanner {
-  background: url("../images/banner1.jpg") no-repeat center;
+  background: url("../images/banner1-compressed.jpg") no-repeat center;
   background-size: cover;
   height: inherit;
 }
@@ -286,7 +286,7 @@ section.banner article.leftBanner {
 section.banner article.rightBanner {
   background: #FFB300;
   height: inherit;
-  padding: 20px 100px;
+  padding: 50px 100px;
 }
 @media (max-width: 991px) {
   section.banner article.rightBanner {
@@ -309,6 +309,11 @@ section.banner article.rightBanner div {
   display: flex;
   font-weight: bold;
   font-size: 2vw;
+}
+@media (max-width: 991px) {
+  section.banner article.rightBanner div {
+    font-size: 4vw;
+  }
 }
 section.app_banner {
   display: grid;

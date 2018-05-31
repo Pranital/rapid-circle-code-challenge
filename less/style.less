@@ -234,7 +234,7 @@ section.banner{
     height: 650px;
   }
   article.leftBanner{
-    background: url("../images/banner1.jpg") no-repeat center;
+    background: url("../images/banner1-compressed.jpg") no-repeat center;
     background-size: cover;
     height: inherit;
     @media (max-width : @md){
@@ -247,7 +247,7 @@ section.banner{
   article.rightBanner{
     background: @orange;
     height: inherit;
-    padding: 20px 100px;
+    padding: 50px 100px;
     @media (max-width : @md){
       height: 325px;
     }
@@ -265,6 +265,9 @@ section.banner{
       display: flex;
       font-weight: bold;
       font-size: 2vw;
+      @media(max-width: @md){
+        font-size: 4vw;
+      }
     }
   }
 }
