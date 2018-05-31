@@ -58,13 +58,6 @@
      }
 
   })
-  //person content highlightening
-  $('.person-content').mouseover(function(){
-    $('.person-content').removeClass('bigContent');
-    $(this).addClass('bigContent');
-  }).mouseleave(function(){
-    $(this).removeClass('bigContent');
-  });
   //active class toggle on upper navbar
   $('.middleNav .navbar-collapse li').click(function(){
   	$('.middleNav .navbar-collapse li').removeClass('active');

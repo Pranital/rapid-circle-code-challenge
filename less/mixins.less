@@ -13,3 +13,9 @@
   color: #555;
   font-size: 16px;
 }
+@fold : all .3s cubic-bezier(0, 0.35, .5, 1.7);
+.folding_mixin{
+  transition: @fold;
+  -webkit-transition: @fold;
+  -moz-transition: @fold;
+}
