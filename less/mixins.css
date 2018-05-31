@@ -3,3 +3,8 @@
   color: #555;
   font-size: 16px;
 }
+.folding_mixin {
+  transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
+  -moz-transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
+}

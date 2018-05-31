@@ -6,16 +6,6 @@
       $('.textwithBtnWrapr button').removeClass('loader')
     },2000)
   })
-  //flip search box on click
-  // $('#ContactsearchBar').click(function(){
-  //   $(this).toggleClass('animateSearch')
-  // })
-  // //on body click except search input it should flip back
-  // $('body').click(function(evt){
-  //     if(evt.target.id != "ContactsearchBar")
-  //      $('#ContactsearchBar').removeClass('animateSearch');
-  //      $('#ContactsearchBar').val("")
-  // });
   //dropdown toggle on click for sideNav left
   $('.sidenav a.dropdown-btn').click(function(){
   	$(this).toggleClass('active');
@@ -28,14 +18,14 @@
         height += ( $(this).height());
         console.log("height"+height);
           $('.dropdown-btn.active i.fa.fa-angle-right').addClass('bottom');
-          $(this).parents('.dropdown').animate({'height':height+100},1000);
-  		    $(this).parent().find('.dropdown-wrapr').animate({'display':'block','opacity':1,'height':height});
+          $(this).parents('.dropdown').animate({'height':height+100},300);
+  		    $(this).parent().find('.dropdown-wrapr').animate({'display':'block','opacity':1,'height':height},0);
           $(this).find('input[type="radio"]').attr({'checked':'checked'})
       }
       else{
           $('.dropdown-btn i.fa.fa-angle-right').removeClass('bottom');
-          $(this).parents('.dropdown').animate({'height':'45px'},1000);
-          $(this).parent().find('.dropdown-wrapr').animate({'display':'none','opacity':0,'height':'0'});
+          $(this).parents('.dropdown').animate({'height':'45px'},300);
+          $(this).parent().find('.dropdown-wrapr').animate({'display':'none','opacity':0,'height':'0'},0);
           $(this).find('input[type="radio"]').removeAttr({'checked':'checked'})
       }
       //dropdown for right hand sideNav
@@ -49,11 +39,11 @@
            height1 += ( $(this).height()+ 10);
 
             $('.dropdown-btn.active i.fa.fa-angle-down').addClass('top');
-     		    $(this).parent().find('.dropdown-wrapr').animate({'display':'block','opacity':1,'height':height1},1000);
+     		    $(this).parent().find('.dropdown-wrapr').animate({'display':'block','opacity':1,'height':height1},300);
          }
          else{
              $('.dropdown-btn i.fa.fa-angle-down').removeClass('top');
-             $(this).parent().find('.dropdown-wrapr').animate({'display':'none','opacity':0,'height':'0'},1000);
+             $(this).parent().find('.dropdown-wrapr').animate({'display':'none','opacity':0,'height':'0'},300);
          }
      }
 

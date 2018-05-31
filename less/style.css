@@ -580,7 +580,6 @@ section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .i
 }
 section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .person-content {
   background-color: white;
-  flex-basis: 80%;
   line-height: normal;
   border: 1px solid #F4F4F4;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
@@ -661,6 +660,9 @@ section.mainContentWrapr div.mainContent article.rightContainer .person-wrapr .p
   background-size: contain;
   background-repeat: no-repeat;
 }
+section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back {
+  flex-basis: 80%;
+}
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back * {
   box-sizing: border-box;
 }
@@ -673,7 +675,12 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   top: 0;
   right: 0;
   content: "";
+  background: linear-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
   background: -webkit-linear-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
+  background-image: -ms-linear-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
+  background: -moz-linear-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
+  background: -o-linear-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
+  background: -webkit-gradient(45deg, #ddd 17%, #dfdfdf 18%, #f5f5f5 30%, #f8f8f8 34%, #eee 39%, rgba(200, 200, 200, 0) 41%);
   display: block;
   width: 100%;
   height: 100%;
@@ -692,12 +699,20 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_box .folding_page-tip:before {
   right: 100%;
   top: 0%;
+  background: linear-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background-image: -ms-radial-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background: -o-radial-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
   background: -webkit-radial-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background: -moz-radial-gradient(-180% 200%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_box .folding_page-tip:after {
   top: 100%;
   right: 0%;
+  background: linear-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
   background: -webkit-radial-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background-image: -ms-radial-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background: -o-radial-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
+  background: -moz-radial-gradient(-250% 320%, circle, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.1) 93%);
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_box .folding_corner-box:hover .folding_page-tip:before {
   border-right: solid 2px #fff;
@@ -741,9 +756,13 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   display: block;
   overflow: hidden;
   -webkit-mask: -webkit-linear-gradient(45deg, transparent 49%, #000 53%);
+  -ms-mask: -ms-linear-gradient(45deg, transparent 49%, #000 53%);
+  -o-mask: -o-linear-gradient(45deg, transparent 49%, #000 53%);
+  -moz-mask: -webkit-linear-gradient(45deg, transparent 49%, #000 53%);
   top: 0;
   right: 0;
   height: 125%;
+  z-index: 1;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents:before {
   content: "";
@@ -760,7 +779,11 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   top: 0;
   right: 0;
   content: "";
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 37%, #DDD 62%, rgba(230, 230, 230, 0.1) 64%, rgba(255, 255, 255, 0) 67%), radial-gradient(-50% 150%, circle, transparent 74%, rgba(0, 0, 0, 0.2) 74%, transparent 81%);
   background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 37%, #DDD 62%, rgba(230, 230, 230, 0.1) 64%, rgba(255, 255, 255, 0) 67%), -webkit-radial-gradient(-50% 150%, circle, transparent 74%, rgba(0, 0, 0, 0.2) 74%, transparent 81%);
+  background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0) 37%, #DDD 62%, rgba(230, 230, 230, 0.1) 64%, rgba(255, 255, 255, 0) 67%), -moz-radial-gradient(-50% 150%, circle, transparent 74%, rgba(0, 0, 0, 0.2) 74%, transparent 81%);
+  background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, 0) 37%, #DDD 62%, rgba(230, 230, 230, 0.1) 64%, rgba(255, 255, 255, 0) 67%), -ms-radial-gradient(-50% 150%, circle, transparent 74%, rgba(0, 0, 0, 0.2) 74%, transparent 81%);
+  background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0) 37%, #DDD 62%, rgba(230, 230, 230, 0.1) 64%, rgba(255, 255, 255, 0) 67%), -o-radial-gradient(-50% 150%, circle, transparent 74%, rgba(0, 0, 0, 0.2) 74%, transparent 81%);
   display: block;
   width: 133%;
   height: 133%;
@@ -777,6 +800,7 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   border-radius: 5px;
   display: inline-block;
   font-size: 11px;
+  z-index: -1;
 }
 section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents .folding_corner-button strong {
   font-size: 13px;
@@ -789,6 +813,17 @@ section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-
   transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
   -webkit-transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
   -moz-transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents {
+    visibility: hidden;
+  }
+  section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back .folding_corner-contents .folding_corner-button {
+    visibility: visible;
+  }
+  section.mainContentWrapr div.mainContent article.rightContainer .folding_effect-back:hover .folding_corner-button {
+    display: none;
+  }
 }
 section.mainContentWrapr div.mainContent.app-mainContent {
   grid-template-columns: 20% auto 20%;
